@@ -17,7 +17,7 @@
   method="post"
         action="http://ss1.ciw-japan.com/cgi-bin.jp/process.pl">
 
-        お名前：<input type="text" name="Email" size="40"/>
+        お名前：<input type="text" name="Name" size="40"/>
         <br/>
         <br/>
 
@@ -38,7 +38,36 @@
           <input type="checkbox" name="Plumbing"/>配管工事<br />
           <input type="checkbox" name="Financing"/>財務会計<br />
         <br />
+
+        Habitat for Humanityからの電子メールをどのくらいの頻度で受け取りたいですか？
         <br />
+         <select name="EmailFreq">
+            <option>週に１度</option>
+            <option>月に１，２度</option>
+            <option>月に１度</option>
+            <option value="Remove">希望しない</option>
+         </select>
+        <br /> 
+
+
+        <br />
+          働きたい国を選択してください（複数選択可）
+        <br />
+        <select name="work" multiple="multiple" size="4">
+          <option>オーストラリア</option>
+          <option>日本</option>
+          <option>インド</option>
+          <option>英国</option>
+          <option>米国</option>
+        </select>
+        <br />
+
+        <br />
+          ご意見をお聞かせください。<br />
+          <textarea name="commnts" cols="30" rows="3">
+            ここに何でも書き込んでください！
+          </textarea>  
+          <br />  
         <br />
         <input type="submit"/>
         <input type="reset"/>
